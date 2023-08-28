@@ -1,0 +1,14 @@
+[Unit]
+Description=Image backup service
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=username
+WorkingDirectory=/path/to/imagebackupdir
+ExecStart=/path/to/imagebackupdir/executable
+
+[Install]
+WantedBy=multi-user.target

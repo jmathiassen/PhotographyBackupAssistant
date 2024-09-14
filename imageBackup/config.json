@@ -1,0 +1,66 @@
+{
+  "import": {
+    "spool": "import",
+    "storage": "spool/incoming",
+    "fileTypes": [
+      {
+        "extension": ".jpg",
+        "dateRename": true,
+        "compress": true,
+        "keepOriginalFilename": true
+      },
+      {
+        "extension": ".jepg",
+        "dateRename": true,
+        "compress": true,
+        "keepOriginalFilename": true
+      },
+      {
+        "extension": ".nef",
+        "dateRename": true,
+        "compress": true,
+        "keepOriginalFilename": true
+      },
+      {
+        "extension": ".nrw",
+        "dateRename": true,
+        "compress": true,
+        "keepOriginalFilename": true
+      },
+      {
+        "extension": ".mp4",
+        "dateRename": true,
+        "compress": true,
+        "keepOriginalFilename": false
+      },
+      {
+        "extension": ".mov",
+        "dateRename": true,
+        "compress": true,
+        "keepOriginalFilename": false
+      }
+    ]
+  },
+  "compress": {
+    "spool": "spool/compress",
+    "storage": "spool/incoming"
+  },
+  "local": [
+    {
+      "spool": "spool/local/drive1",
+      "storage": "storage/drive1",
+      "active": false
+    }
+  ],
+  "remote": [
+    {
+      "spool": "spool/remote/host1",
+      "username": "username",
+      "pubKeyPath": "host1.pem",
+      "host": "127.0.0.1",
+      "port": 22,
+      "directory": "files",
+      "active": false
+    }
+  ]
+}

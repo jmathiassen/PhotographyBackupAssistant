@@ -1,6 +1,6 @@
 ﻿using imageBackup.Classes;
 using imageBackup.Modules;
-f
+
 Operations operations = new();
 Logger.Log("Main", "Startup");
 

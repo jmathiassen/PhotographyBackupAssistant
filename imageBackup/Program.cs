@@ -4,7 +4,6 @@ using imageBackup.Modules;
 Operations operations = new();
 Logger.Log("Main", "Startup");
 
-
 while (true)
 {
 	try

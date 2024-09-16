@@ -3,7 +3,7 @@ using imageBackup.Modules;
 
 Operations operations = new();
 Logger.Log("Main", "Startup");
-ff
+
 while (true)
 {
 	try
